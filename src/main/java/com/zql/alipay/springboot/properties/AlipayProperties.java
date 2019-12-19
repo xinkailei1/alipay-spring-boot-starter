@@ -1,6 +1,7 @@
 package com.zql.alipay.springboot.properties;
 
 import lombok.Data;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /***
@@ -11,7 +12,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @Data
 @ConfigurationProperties("alipay")
+@ConditionalOnProperty(name = "alipay.enable", havingValue = "true")
 public class AlipayProperties {
+
+    /**
+     * 是否启用
+     */
+    private boolean enable;
 
     /**
      * 是否沙箱环境

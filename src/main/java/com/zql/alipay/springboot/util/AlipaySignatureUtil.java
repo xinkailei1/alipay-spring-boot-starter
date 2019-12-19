@@ -25,6 +25,7 @@ public class AlipaySignatureUtil {
      * @return
      */
     public static boolean checkSignature(HttpServletRequest request, String alipayPublicCertPath) {
+
         //获取支付宝POST过来反馈信息
         Map<String, String> params = new HashMap<String, String>();
         Map<String, String[]> requestParams = request.getParameterMap();

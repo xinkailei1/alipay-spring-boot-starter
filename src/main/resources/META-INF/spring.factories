@@ -1,1 +1,2 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.zql.alipay.springboot.autoconfigure.AlipayAutoConfigure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.zql.alipay.springboot.autoconfigure.SingleAlipayAutoConfigure
