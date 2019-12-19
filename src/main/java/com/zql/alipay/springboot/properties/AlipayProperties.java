@@ -12,7 +12,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @Data
 @ConfigurationProperties("alipay")
-@ConditionalOnProperty(name = "alipay.enable", havingValue = "true")
 public class AlipayProperties {
 
     /**

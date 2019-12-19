@@ -21,6 +21,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableConfigurationProperties(AlipayProperties.class)
+@ConditionalOnProperty(name = "alipay.enable", havingValue = "true")
 public class SingleAlipayAutoConfigure {
 
     @Autowired
